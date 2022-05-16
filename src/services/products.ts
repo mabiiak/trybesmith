@@ -1,4 +1,4 @@
-import getAllModel from '../models/products';
+import { getAllModel } from '../models/products';
 
 export default async function getAllService() {
   const data = await getAllModel();
