@@ -4,3 +4,8 @@ export interface Products {
   amount: string;
   orderId?: number;
 }
+
+export interface Error {
+  status: number,
+  message: string,
+} 
