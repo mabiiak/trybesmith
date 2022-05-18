@@ -5,6 +5,14 @@ export interface Products {
   orderId?: number;
 }
 
+export interface Users {
+  id?: number;
+  username: string;
+  classe: string;
+  level: number;
+  password: string;
+}
+
 export interface Error {
   status: number,
   message: string,

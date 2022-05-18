@@ -151,7 +151,7 @@ describe('3 - Crie um endpoint para o cadastro de pessoas usuárias', function()
     }
     const result = await request(app).post('/users').send(user);
     expect(result.statusCode).toEqual(201);
-    expect(result.body).toBeDefined();
+    expect(result.body).toBeDefined();    
     expect(result.body.token).toBeDefined();
     const [selected] = await connection.execute('SELECT * FROM Trybesmith.Users');
     const users = selected as {

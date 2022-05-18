@@ -2,10 +2,10 @@ import { Router } from 'express';
 import { getAll, create } from '../controllers/products';
 import validateProduct from '../middlewares/products';
 
-const routes = Router();
+const routesProduct = Router();
 
-routes.get('/', getAll);
+routesProduct.get('/', getAll);
 
-routes.post('/', validateProduct, create);
+routesProduct.post('/', validateProduct, create);
 
-export default routes;
+export default routesProduct;
