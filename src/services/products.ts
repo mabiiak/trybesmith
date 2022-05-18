@@ -1,6 +1,11 @@
-import { getAllModel } from '../models/products';
+import { getAllModel, createModel } from '../models/products';
 
-export default async function getAllService() {
+export async function getAllService() {
   const data = await getAllModel();
   return { status: 200, data };
+}
+
+export async function createService(name :string, amount :string) {
+  const data = await createModel(name, amount);
+  return { status: 201, data };
 }
