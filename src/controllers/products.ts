@@ -1,10 +1,10 @@
 import { Request, Response } from 'express';
-import { getAllService, createService } from '../services/products';
+import { getAllProductsService, createService } from '../services/products';
 
 export async function getAll(req: Request, res: Response) {
-  const { status, data } = await getAllService();
+  const { status, products } = await getAllProductsService();
 
-  res.status(status).json(data);
+  res.status(status).json(products);
 }
 
 export async function create(req: Request, res: Response) {
