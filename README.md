@@ -57,7 +57,7 @@
   
 </details>
 
-# Requisitos
+## Requisitos
 
     ✅ 1 - Crie um endpoint para a listagem de produtos
 
@@ -67,7 +67,7 @@
 
     ✅ 4 - Crie um endpoint para listar todos os pedidos
 
-    ❌ Requisito Bônus
+   ## Requisito Bônus
 
     ❌ 5 - Crie um endpoint para o login de pessoas usuárias
 
